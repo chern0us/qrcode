@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+  }
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu-box {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    border: dashed 5px #3698f4;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 1em;
+    width: 45%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .clear {
+    border: solid grey;
+    color: grey;
+  }
+  .create {
+    align-self: flex-end;
+    border: solid rgb(206, 89, 108);
+    color: grey;
+    font-weight: bold;
+  }
+  .create:hover {
+    border: solid #3698f4;
+    background-color: #3698f4;
+    color: white;
+  }
+  .clear:hover {
+    background-color: grey;
+    color: white;
+  }
+  .create:active {
+    background-color: #2a72b4;
+    border: solid #2a72b4;
+  }
+  .clear:active {
+    background-color: #555555;
+    border: solid #555555;
+  }
+  .input-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+  }
+  .qr-container {
+    width: 70vw;
+    height: 70vw;
+    display: flex;
+    margin: auto;
+    margin-top: auto;
+    justify-content: center;
+  }
+  @media screen and (min-width: 600px) {
+    .menu {
+      flex-direction: row;
+      justify-content: center;
+      vertical-align: middle;
+    }
+    .menu-box {
+      justify-content: center;
+      vertical-align: middle;
+    }
+    .qr-container {
+      width: 250px;
+      height: 250px;
+      margin: 1vw;
+    }
+    .input-form {
+      margin-bottom: 0;
+    }
+  }
+  
+  input[type="text"],
+  select {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px dotted pink;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: 0.1s ease;
+  }
+  input[class="warning"],
+  .warning {
+    border: 2px solid red;
+    background-color: rgb(223, 175, 175);
+    color: white;
+  }
+  select {
+    cursor: pointer;
+  }
+  

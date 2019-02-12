@@ -1,0 +1,37 @@
+{
+  "name": "qr-animated",
+  "version": "1.0.0",
+  "description": "Animated qr-code on canvas.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "animated",
+    "bg-canvases",
+    "qr",
+    "barcode"
+  ],
+  "author": "chern0us",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "bg-canvases": "^1.1.7",
+    "lodash": "^4.17.11",
+    "qrcode-generator": "^1.4.1"
+  }
+}

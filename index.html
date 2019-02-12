@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ticket</title>
+    <meta name="description" content="Small QR-Code generator">
+    <meta name="author" content="SitePoint">
+    <!-- <Styledheet> -->
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <!-- Tag for media requests -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="menu-box">
+            <div class="menu">
+                <div class="qr-container">
+                    <canvas id="qrCanvas"></canvas>
+                </div>
+                <div class="input-form">
+                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                    <input type="text" id="lname" name="lastname" placeholder="Last name">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <div class="row">
+                        <button id="clear-button" class="button clear">Clear</button>
+                        <button id="create-button" class="button create">Create QR-Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/index.js"></script>
+</body>
+
+</html>
